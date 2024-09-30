@@ -1,4 +1,7 @@
 import React from 'react';
+import Chart from "../Chart/Chart"; // Adjust the import path if necessary
+import D3Chart from "../Chart/D3Chart"; // Adjust the import path if necessary
+
 
 
 function HomePage() {
@@ -59,6 +62,8 @@ function HomePage() {
         <article aria-live="polite">
             <h2>Chart</h2>
             <p id="chart-description"> This Chart will show your budget in a pie chart.</p>
+            <Chart/>
+           
             <p>
                
                 <canvas id="myChart" width="400" height="400" aria-describedby="chart-description"></canvas>
@@ -67,11 +72,8 @@ function HomePage() {
 
         <article aria-live="polite">
             <h2>D3js</h2>
+            <D3Chart/>
          
-            <p>
-               
-                {/* <div id="d3Chart" width="350" height="350" aria-descibedby="chart-description"></canvas> */}
-            </p>
         </article>
     </section>
 
@@ -79,6 +81,7 @@ function HomePage() {
 
 </main>
   );
+
 }
 
 export default HomePage;

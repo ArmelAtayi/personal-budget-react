@@ -12,6 +12,8 @@ import HomePage from "./HomePage/HomePage";
 import Footer from "./Footer/Footer";
 import AboutPage from "./AboutPage/AboutPage";
 import LoginPage from "./LoginPage/LoginPage";
+import Chart from "./Chart/Chart";
+import D3Chart from "./Chart/D3Chart";
 
 function App() {
   return (
@@ -24,8 +26,12 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/" element={<HomePage />} />
       </Routes>
+
       </div>
-     
+      
+      {/* <Chart/> */}
+      {/* <D3Chart/>
+      */}
       <Footer />
     </Router>
   );
